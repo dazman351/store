@@ -1,0 +1,124 @@
+body {
+    background-image: url('img/nastol.com.ua-8908.png');
+}
+
+
+aside img {
+    width: 100px;
+
+}
+
+aside h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 8px;
+    color: #white;
+
+
+}
+
+
+aside .logo {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -18px;
+    color: yellow;
+
+
+}
+
+
+aside {
+    float: left;
+    background-image: url('img/Backgrounds_Black_cubic_background_094966_.png');
+    width: 20%;
+    padding: 2.5%;
+    height: 150vh;
+    color: white;
+    border-right: 5px solid #c6c6c6;
+}
+
+main {
+    float: left;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    width: 75%;
+}
+
+aside ul {list-style: none}
+aside a {text-decoration: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    color :#eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+main h1 { font-size: 50px; color: white; }
+main h2 { color: white; }
+main h3 { font-size: 20px; margin: 20px auto; color: white; }
+main p { font-size: 20px; margin: 20px auto; color: gray; }
+
+
+
+div a {list-style: none}
+
+.card {
+    position: relative;
+    top: 38px;
+    right: -70px;
+
+}
+
+.features li {
+    list-style: none;
+    position: relative;
+    right: -1050px;
+    top: -300px;
+
+}
+
+.btn-group {
+    list-style: none;
+    position: relative;
+    right: -1100px;
+    top: -300px;
+}
+
+form {
+    margin: 10px 39%;
+    text-align: left;
+    color: white;
+}
+
+.profile h3 {
+    color: white;
+    position: relative;
+    right: -8px;
+}
+
+.profile p {
+    text-align: left;
+    margin-left: 400px;
+    position:relative;
+    top: -165px;
+}
+
+
+.profile img {
+    width: 170px;
+    height: 170px;
+    margin-right: 600px;
+    position: relative;
+    top: 50px;
+}

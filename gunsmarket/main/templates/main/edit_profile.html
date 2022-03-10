@@ -1,0 +1,16 @@
+{% extends 'main/all.html' %}
+{% load static %}
+
+{% block title %}
+    Редактирование профиля
+{% endblock %}
+
+{% block content %}
+<div class="edit-profile">
+    <form method="POST" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary" type="submit" name="Confirm changes">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,167 @@
+body {
+    background-image: url('img/nastol.com.ua-8908.png');
+
+}
+
+main h2 {
+    color: white;
+
+}
+
+
+aside img {
+    width: 100px;
+
+}
+
+aside h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 8px;
+    color: #white;
+
+
+}
+
+
+aside .logo {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -18px;
+    color: yellow;
+
+
+}
+
+
+aside {
+    float: left;
+    background-image: url('img/Backgrounds_Black_cubic_background_094966_.png');
+    width: 20%;
+    padding: 2.5%;
+    height: 150vh;
+    color: #fff;
+    border-right: 5px solid #c6c6c6;
+}
+
+main {
+    float: left;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    width: 75%;
+    height: 1vh;
+}
+
+aside ul {list-style: none}
+aside a {text-decoration: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    color :#eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+main h1 { font-size: 50px; }
+main p { font-size: 20px; margin: 20px auto }
+
+
+
+div a {list-style: none}
+
+.card {
+    position: relative;
+    top: 38px;
+    right: -70px;
+
+}
+
+.card h7 {
+    position: relative;
+    right: 50px;
+    top: 15px;
+    font-size: 115%;
+    color: white;
+
+}
+
+.card p {
+    color: white;
+
+}
+
+
+.card a {
+    position: relative;
+    right: -48px;
+    top: 8px;
+
+}
+
+.card h6 {
+    position: relative;
+    top: 15px;
+    color: white;
+
+}
+
+.card h5 {
+    position: relative;
+    top: 15px;
+    color: white;
+
+}
+
+
+.card img {
+    width: 250px;
+    height: 120px;
+    border: none;
+
+}
+
+.card-deck {
+    display: inline-block;
+    width: 32%;
+    float: left
+
+}
+
+
+.card-body {
+    background-image: url('img/140520040122.png');
+
+}
+
+
+.pagination {
+    list-style: none;
+    position: relative;
+    top: 900px;
+    left: -600px;
+
+
+}
+
+.search h3 {
+    color: white;
+    position: relative;
+    right: -25px;
+
+}
+
+.search form {
+    width: 30%;
+    position: relative;
+    right: -400px;
+
+}

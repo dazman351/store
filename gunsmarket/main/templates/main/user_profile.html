@@ -1,0 +1,29 @@
+{% extends 'main/all.html' %}
+{% load static %}
+
+{% block title %}
+    Ваш профиль
+{% endblock %}
+
+{% block content %}
+<div class="profile">
+        {% if request.user.is_authenticated %}
+                {% if request.user.profile.name == "" %}
+                <h3>Зайдите в настройки и введите данные</h3>
+                {% else %}
+                <h3>Здравствуйте, {{ request.user.profile.name }}</h3>
+                {% endif %}
+                {% if request.user.profile.image %}
+                <img src="{{ request.user.profile.image.url }}">
+                {% else %}
+                <img src="{% static 'main/profile_img/avatar.png' %}">
+                {% endif %}
+                <p>Имя: {{ request.user.profile.name }}</p>
+                <p>Фамилия: {{ request.user.profile.surname }}</p>
+                <p>Основной email: {{ request.user.email }}</p>
+                <p>Запасной email: {{ request.user.profile.email2 }}</p>
+                <p>Телефон: {{ request.user.profile.phone }}</p>
+                <p>Дата создания профиля: {{ request.user.profile.date_create }}</p>
+        {% endif %}
+</div>
+{% endblock %}

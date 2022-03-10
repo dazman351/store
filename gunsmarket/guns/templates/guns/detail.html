@@ -1,0 +1,97 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/cart.css' %}">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/248ac66584.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <aside>
+        <img src="{% static 'main/img/gun.png' %}">
+        <span class="logo">GunsMarket</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fa-solid fa-circle-question"></i> О нас</li></a>
+            <a href="{% url 'info' %}"><li><i class="fa-solid fa-paper-plane"></i> Контакты</li></a>
+            <a href="{% url 'guns' %}"><li><i class="fa-solid fa-gun"></i> Оружия</li></a>
+        </ul>
+    </aside>
+    <main>
+        <div class="features">
+            {% if request.user.is_authenticated %}
+            <div class="btn-group">
+              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hi, {{ request.user }}
+              </button>
+              <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'user_profile' request.user.id %}">Ваш профиль</a>
+                    <a class="dropdown-item" href="{% url 'cart_detail' %}">Корзина</a>
+                    <a class="dropdown-item" href="{% url 'edit_profile' request.user.id %}">Настройки</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{% url 'logout' %}">Выйти</a>
+              </div>
+            </div>
+            {% else %}
+            <li><a href="{% url 'register' %}" class="btn btn-outline-info">Регистрация</a> | <a href="{% url 'login' %}" class="btn btn-outline-info">Войти</a></li>
+            {% endif %}
+        </div>
+             <h1>Ваша корзина</h1>
+    <table class="cart">
+        <thead>
+        <tr>
+            <th>Фото</th>
+            <th>Оружие</th>
+            <th>Кол-во</th>
+            <th>Удалить из корзины</th>
+            <th>Цена за шт.</th>
+            <th>Общая цена</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in cart %}
+            {% with product=item.product %}
+                <tr>
+                     <td>
+                        <img src="
+                            {% if product.image %}
+                                {{ product.image.url }}
+                            {% else %}
+                                {% static 'img/no_image.png' %}
+                            {% endif %}">
+                    </td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td><a href="{% url 'cart_remove' product.id %}">Удалить</a></td>
+                    <td class="num">${{ item.price }}</td>
+                    <td class="num">${{ item.total_price }}</td>
+                </tr>
+            {% endwith %}
+        {% endfor %}
+
+        </tbody>
+    </table>
+    <div class="total_price">
+        <tr class="total">
+            <td>Сумма товаров: </td>
+            <td colspan="4"></td>
+            <td class="num">${{ cart.get_total_price }}</td>
+        </tr>
+    </div>
+    <p class="text-right">
+        <a href="{% url 'guns' %}" class="btn btn-primary">В магазин</a>
+        <a href="#" class="btn btn-primary">К покупке</a>
+    </p>
+    </main>
+</body>
+</html>

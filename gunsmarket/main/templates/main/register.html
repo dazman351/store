@@ -1,0 +1,16 @@
+{% extends 'main/all.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<div class="large-offset-3 large-6 columns">
+    <form action="." method="POST">
+        {{ user_form.as_p }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary btn-block">Регистрация</button>
+    </form>
+</div>
+
+
+{% endblock %}
+

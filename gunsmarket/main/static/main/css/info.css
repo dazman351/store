@@ -1,0 +1,165 @@
+body {
+    background-image: url('img/515519-vertical-textured-wallpaper-backgrounds-2560x1600-samsung-galaxy.png');
+}
+
+
+aside img {
+    width: 100px;
+
+}
+
+aside h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 8px;
+    color: #white;
+
+
+}
+
+
+aside .logo {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -18px;
+    color: yellow;
+
+
+}
+
+
+aside {
+    float: left;
+    background-image: url('img/Backgrounds_Black_cubic_background_094966_.png');
+    width: 20%;
+    padding: 2.5%;
+    height: 200vh;
+    color: white;
+    border-right: 5px solid #c6c6c6;
+}
+
+main {
+    float: left;
+    color: black;
+    margin-top: 40px;
+    text-align: center;
+    width: 30%;
+}
+
+aside ul {list-style: none}
+aside a {text-decoration: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    color :#eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+div a {list-style: none}
+
+.card {
+    position: relative;
+    top: 38px;
+    right: -70px;
+
+}
+
+
+.cart {
+    position: relative;
+    right: -650px;
+    top: -8px;
+    color: white;
+    margin-left: 250px;
+
+}
+
+.features img {
+    width: 303px;
+    height: 200px;
+    position: relative;
+    left: -30px;
+    top: 30px;
+
+}
+
+
+
+
+.features h4 {
+    position: relative;
+    top: -227px;
+    right: -50px;
+    width: 450px;
+    margin: 20px 82%;
+    text-align: left;
+
+}
+
+.features h5 {
+    position: relative;
+    top: 30px;
+
+
+
+
+}
+
+
+.features {
+    position: relative;
+    right: -30px;
+}
+
+
+
+.features a {
+    position: relative;
+    top: -27px;
+    left: -25px;
+
+}
+
+.alert-warning {
+    position: relative;
+    left: -28px;
+    top: 38px;
+    margin: 40px 12%;
+    text-align: left;
+
+
+}
+.description h3 {
+    color: white;
+    position: relative;
+    right: -320px;
+    top: 20px;
+
+}
+
+.features form {
+    position: relative;
+    top: 50px;
+    right: 30px;
+
+}
+
+td {
+    text-align: center;
+
+}
+
+.cart li {list-style: none;}

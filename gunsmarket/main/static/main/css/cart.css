@@ -1,0 +1,147 @@
+body {
+    background-image: url('img/nastol.com.ua-8908.png');
+}
+
+
+aside img {
+    width: 100px;
+    height: 100px;
+    margin-left: 2px;
+
+
+}
+
+aside h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 8px;
+    color: #white;
+
+
+}
+
+
+aside .logo {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    color: yellow;
+
+
+
+}
+
+
+aside {
+    float: left;
+    background-image: url('img/Backgrounds_Black_cubic_background_094966_.png');
+    width: 20%;
+    padding: 2.5%;
+    height: 150vh;
+    color: white;
+    border-right: 5px solid #c6c6c6;
+}
+
+main {
+    float: left;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    width: 75%;
+}
+
+aside ul {list-style: none}
+aside a {text-decoration: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+
+}
+
+aside ul li:hover, aside ul a:hover {
+    color :#eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+main h1 { font-size: 50px; color: white; position:relative; right: 1px; }
+main h2 { color: white; }
+main p { font-size: 20px; margin: 20px auto; color: white; }
+
+
+
+div a {list-style: none}
+
+
+
+.cart tr {
+    position: relative;
+    right: -100px;
+    color: white;
+    top: 50px;
+
+}
+
+img {
+   position: relative;
+   width: 120px;
+   left: -10px;
+   height: 70px;
+   border: none;
+
+
+}
+
+table {
+    text-indent: 40px;
+}
+
+
+.text-right {
+    position: relative;
+    top: 90px;
+    left: -415px;
+
+
+}
+
+.total_price {
+    position: relative;
+    top: 75px;
+    color: white;
+
+}
+
+.cart thead {
+    position: relative;
+    top: -20px;
+
+
+}
+
+tbody {
+   text-align: center;
+
+
+}
+
+.features li {
+    list-style: none;
+    color: white;
+    margin-left: 83%;
+    margin-top: -20px;
+
+}
+
+.btn-group {
+    margin-right: -850px;
+
+}
+
+
+
+

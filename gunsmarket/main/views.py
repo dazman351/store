@@ -49,6 +49,8 @@ class Logout(LogoutView):
 
 def user_profile(request, id):
     profile = get_object_or_404(Profile, id=id)
+    if id != request.user.profile.id:
+        return redirect('error_page')
     return render(request, 'main/user_profile.html', {'profile': profile})
 
 
@@ -61,5 +63,11 @@ def edit_profile(request, id):
         form = ProfileEditForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             form.save()
+    if id != request.user.id:
+        return redirect('error_page')
     context = {'form': form }
     return render(request, 'main/edit_profile.html', context)
+
+
+def error_page(request):
+    return render(request, 'main/error_page.html')

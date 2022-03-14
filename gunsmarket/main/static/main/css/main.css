@@ -122,3 +122,12 @@ form {
     position: relative;
     top: 50px;
 }
+
+
+.error {
+    position: relative;
+    top: 100px;
+    color: white;
+}
+
+

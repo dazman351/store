@@ -23,7 +23,7 @@ class UserRegistrationForm(forms.ModelForm):
 class AuthUserForm(AuthenticationForm, forms.ModelForm):
     class Meta:
         model = User
-        fields = {'username'}
+        fields = {'username', 'password'}
 
 
 class ProfileEditForm(ModelForm):

@@ -8,9 +8,28 @@
 {% block content %}
 <div class="edit-profile">
     <form method="POST" action="" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
+        <div class="form-group">
+            <h3>{{ form.name.label_tag }}</h3>
+            <h4>{{ form.name }}</h4>
+        </div>
+        <div class="form-group">
+            <h3>{{ form.surname.label_tag }}</h3>
+            <h4>{{ form.surname }}</h4>
+        </div>
+        <div class="form-group">
+            <h3>{{ form.phone.label_tag }}</h3>
+            <h4>{{ form.phone }}</h4>
+        </div>
+        <div class="form-group">
+            <h3>{{ form.email2.label_tag }}</h3>
+            <h4>{{ form.email2 }}</h4>
+        </div>
+        <div class="photo">
+            <h3>{{ form.image.label_tag }}</h3>
+            <p>{{ form.image }}</p>
+        </div>
         <input class="btn btn-primary" type="submit" name="Confirm changes">
+    {% csrf_token %}
     </form>
 </div>
 {% endblock %}

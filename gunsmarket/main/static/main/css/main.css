@@ -67,7 +67,7 @@ aside ul li:hover, aside ul a:hover {
 main h1 { font-size: 50px; color: white; }
 main h2 { color: white; }
 main h3 { font-size: 20px; margin: 20px auto; color: white; }
-main p { font-size: 20px; margin: 20px auto; color: gray; }
+main p { font-size: 20px; margin: 20px auto; color: white; }
 
 
 
@@ -120,9 +120,7 @@ div a {list-style: none}
 }
 
 
-.form-group{
- margin-bottom: 15px;
-}
+
 
 .form-control {
  height: auto!important;
@@ -156,7 +154,7 @@ padding: 8px 12px !important;
  max-width: 400px;
  padding: 12px 40px;
  background:#009edf;
-
+ opacity: .7;
 
 }
 span.input-group-addon i {
@@ -174,7 +172,6 @@ span.input-group-addon i {
 }
 
 .edit-profile {
-    text-align: center;
-
+    text-align: left;
+    margin: 10px 39%;
 }
-

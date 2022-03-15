@@ -11,8 +11,8 @@
          <h3>{{ form.username.label_tag }}</h3>
          <div class="cols-sm-10">
          <div class="input-group">
-         <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-         <h3>{{ form.username }}</h3>
+         <span class="input-group-addon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+         <input type="text" name="{{ form.username.name }}" class="form-control" placeholder="Ваш ник">
          </div>
          </div>
      </div>
@@ -22,7 +22,7 @@
          <div class="cols-sm-10">
          <div class="input-group">
          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-         <h3>{{ form.password }}</h3>
+         <input type="password" name="{{ form.password.name }}" class="form-control" placeholder="Ваш пароль">
          </div>
          </div>
      </div>

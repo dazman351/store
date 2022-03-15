@@ -12,8 +12,8 @@
      <h3>{{ user_form.username.label_tag }}</h3>
      <div class="cols-sm-10">
          <div class="input-group">
-         <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-         <h3>{{ user_form.username }}</h3>
+         <span class="input-group-addon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+         <input type="text" name="{{ user_form.username.name }}" class="form-control" placeholder="Ваш ник">
          </div>
      </div>
  </div>
@@ -24,7 +24,7 @@
      <div class="cols-sm-10">
          <div class="input-group">
          <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-         <h3>{{ user_form.email }}</h3>
+         <input type="email" name="{{ user_form.email.name }}" class="form-control" placeholder="Ваш email">
          </div>
      </div>
  </div>
@@ -34,7 +34,7 @@
          <div class="cols-sm-10">
          <div class="input-group">
          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-         <h3>{{ user_form.password }}</h3>
+         <input type="password" name="{{ user_form.password.name }}" class="form-control" placeholder="Ваш пароль">
          </div>
      </div>
  </div>
@@ -44,7 +44,7 @@
          <div class="cols-sm-10">
          <div class="input-group">
          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-         <h3>{{ user_form.password2 }}</h3>
+         <input type="password" name="{{ user_form.password2.name }}" class="form-control" placeholder="Повторите ваш пароль">
          </div>
      </div>
  </div>
@@ -53,7 +53,7 @@
   <button class="btn btn-primary btn-lg btn-block login-button">Регистрация</button>
  </div>
   <div class="form-group ">
-     <h3>Уже есть аккаунт? Нажмите <a href="{% url 'login' %}">здесь</a></h3>
+     <h3>Уже есть аккаунт? Нажмите <a href="{% url 'login' %}" class="btn btn-success">сюда</a></h3>
  </div>
 {% csrf_token %}
  </form>
